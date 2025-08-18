@@ -11,6 +11,7 @@ pub fn build(b: *std.Build) void {
     }{
         .{ .file = "examples/01_piano/App.zig", .name = "example_1" },
         .{ .file = "examples/02_core-triangle/App.zig", .name = "example_2" },
+        .{ .file = "examples/03_core-custom-entrypoint/App.zig", .name = "example_3" },
     };
 
     {
@@ -31,7 +32,7 @@ pub fn build(b: *std.Build) void {
 
             // Have Mach create the executable for us
             const exe = @import("mach").addExecutable(mach_dep.builder, .{
-                .name = "hello-world",
+                .name = ex.name,
                 .app = app_mod,
                 .target = target,
                 .optimize = optimize,
