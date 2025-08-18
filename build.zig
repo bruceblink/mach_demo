@@ -12,6 +12,7 @@ pub fn build(b: *std.Build) void {
         .{ .file = "examples/01_piano/App.zig", .name = "example_1" },
         .{ .file = "examples/02_core-triangle/App.zig", .name = "example_2" },
         .{ .file = "examples/03_core-custom-entrypoint/App.zig", .name = "example_3" },
+        .{ .file = "examples/04_core-transparent-window/App.zig", .name = "example_4" },
     };
 
     {
