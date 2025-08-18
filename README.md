@@ -5,5 +5,7 @@ zig version: [0.14.0-dev.2577+271452d22](https://machengine.org/docs/nominated-z
 运行方式
 
 ```bash
-zig build run
+zig build example_1
+zig build example_2
+# ....
 ```
